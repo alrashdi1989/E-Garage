@@ -1,0 +1,106 @@
+<form cForm>
+    <div class="row">
+      <label cLabel="col" for="inputPassword-3">
+        {{ "Ad Title" | translate }}
+      </label>
+      <c-col xl="Auto">
+        <input
+          aria-describedby="passwordHelpInline-3"
+          cFormControl
+          id="inputPassword-3"
+          type="text"
+        />
+      </c-col>
+      <c-col xl="Auto">
+        <label cLabel="col" for="Ad-Discreption">
+          {{ "Ad-Discreption" | translate }}
+        </label>
+  
+        <textarea
+          id="Ad-Discreption"
+          aria-label="With textarea"
+          cFormControl
+        ></textarea>
+      </c-col>
+  
+      <c-col xl="Auto" class="mt-3">
+        <label cLabel="col" for="Contact-Info">
+          {{ "Contact-Info" | translate }}
+        </label>
+        <c-input-group class="mb-3">
+          <span cInputGroupText id="basic-addon1">+968</span>
+          <input
+            type="number"
+            aria-describedby="basic-addon1"
+            aria-label="Contact-Info"
+            cFormControl
+          />
+        </c-input-group>
+      </c-col>
+      <c-col xl="Auto">
+        <label cLabel="col" for="AdImage">
+          {{ "Image" | translate }}
+        </label>
+        <c-input-group class="mt-3">
+          <input cFormControl id="AdImage" type="file" />
+        </c-input-group>
+      </c-col>
+      <c-col xl="Auto" class="text-center mt-3">
+        <img
+          cCardImg="top"
+          loading="lazy"
+          width="50px"
+          style="width: 250px"
+          src="./assets/images/addhere.jpg"
+        />
+      </c-col>
+  
+      <!-- <c-col xl="Auto" class="mt-3">
+        <label cLabel="col" for="Payment">
+          {{ "Payment" | translate }}
+        </label>
+        <c-card id="Payment" style="width: auto" class="m-3">
+          <c-form-check>
+            <input
+              cFormCheckInput
+              type="radio"
+              value="one"
+              name="flexRadioDefault"
+            />
+            <label cFormCheckLabel
+              >24 hours &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -4
+              OMR
+            </label>
+          </c-form-check>
+          <c-form-check>
+            <input
+              cFormCheckInput
+              type="radio"
+              value="two"
+              name="flexRadioDefault"
+              checked
+            />
+            <label cFormCheckLabel
+              >48 hours &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -6
+              OMR
+            </label>
+          </c-form-check>
+          <c-form-check>
+            <input
+              cFormCheckInput
+              type="radio"
+              value="two"
+              name="flexRadioDefault"
+              checked
+            />
+            <label cFormCheckLabel
+              >72 hours &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -10 OMR
+            </label>
+          </c-form-check>
+        </c-card>
+      </c-col> -->
+     
+      <input cButton color="primary" type="submit" value="Submit" class="mt-3" />
+    </div>
+  </form>
+  
